@@ -1,3 +1,20 @@
+***突然想起是否需要用masked之后的基因组：/data14/wangzhiheng/final_v2/EDTA
+***RNA-seq数据：/data4/Longmi4_rna_seq
+1.对RNA-seq数据做质控
+cd /data4/Longmi4_rna_seq/lipinghua
+conda activate huangshihui
+mkdir ./fastqc_out
+'未使用fastqc'
+fastqc -o ./fastqc_out -t 10 *fastq.gz    
+# -o 指定文件输出目录，必须得提前建立好
+# -t 指定线程数
+报告分析Ref：
+https://zhuanlan.zhihu.com/p/20731723 北大生物学博士
+https://zhuanlan.zhihu.com/p/136999851 农大遗传学博士
+
+#使用fastp做质控
+fastp -i 双端测序输入文件1.fastq.gz -I 双端测序输入文件2.fastq.gz -o 输出文件1clean.fastq.gz -O 输出文件2clean.fastq.gz
+
 # 建立索引
 vi hisat2_build.sh
   #!/bin/bash
@@ -5,3 +22,7 @@ vi hisat2_build.sh
   conda activate huangshihui
   
   hisat2-build -p 4 longmi_v2.fa v2
+
+得到文件：v2.1.$i.ht2,$1=1,2,3,4,5,6,7,8 位于/home/wangzhiheng/huangshihui/v2_annotation/index
+
+# hisat2比对
