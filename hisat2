@@ -23,6 +23,6 @@ vi hisat2_build.sh
   
   hisat2-build -p 4 longmi_v2.fa v2
 
-得到文件：v2.1.$i.ht2,$1=1,2,3,4,5,6,7,8 位于/home/wangzhiheng/huangshihui/v2_annotation/index
+得到文件：v2.1.$i.ht2,$1=1,2,3,4,5,6,7,8 位于/data14/huangshihui/v2_annotation/index
 
 # hisat2比对
