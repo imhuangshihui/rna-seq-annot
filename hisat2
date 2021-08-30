@@ -39,9 +39,11 @@ hisat2 -p 20 --dta -x ./index/v2 -1 file_R1clean.fastq.gz -2 file_R2clean.fastq.
 samtools: error while loading shared libraries: libcrypto.so.1.0.0: cannot open shared object file: No such file or directory
 原因：现在samtools的版本已经在1.9以上了，但是conda安装的samtools版本依然是1.7
 解决：conda install -c bioconda samtools=1.9 --force-reinstall（参考https://blog.csdn.net/zhangjunya/article/details/108235796）
-samtools -@ 20 -o file.bam file.sam
+conda activate samtools 
+samtools sort -@ 20 -o file.bam file.sam
 -@ 指定线程数
 -o 输出结果bam文件的名称
+# StringTie转录本组装
 
 
 
