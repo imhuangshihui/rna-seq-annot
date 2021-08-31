@@ -48,6 +48,14 @@ samtools sort -@ 20 -o file.bam file.sam
 stringtie.sh
 ## Cufflinks转录本组装
 
+# 3.TACO合并排序转录本
+## TACO的下载及安装
+[TACO官方主页](http://tacorna.github.io/)  
+cd ~/huangshihui/software
+tar -zxvf taco-v0.7.3.Linux_x86_64.tar.gz
+
+
+
 
 
 
