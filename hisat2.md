@@ -53,8 +53,11 @@ stringtie.sh
 [TACO官方主页](http://tacorna.github.io/)  
 cd ~/huangshihui/software
 tar -zxvf taco-v0.7.3.Linux_x86_64.tar.gz
-
-
+### 构建<gtf_file.txt>：
+ls /data14/huangshihui/v2_annotation/hisat2_results_for_stringtie/stringtie_gtf/*.gtf > /data14/huangshihui/v2_annotation/hisat2_results_for_stringtie/stringtie_gtf/mergelist.txt
+### run_taco.sh
+/home/wangzhiheng/huangshihui/software/taco-v0.7.3.Linux_x86_64/taco_run -p 8 -o ./TACO_results2 ./mergelist.txt
+TACO_results2的文件夹不用事先建立，否则会报错
 
 
 
