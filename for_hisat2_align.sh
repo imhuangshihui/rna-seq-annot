@@ -38,14 +38,13 @@ do
 hisat2 -p 20 --dta-cufflinks -x /data14/huangshihui/v2_annotation/index/v2 -1 SRR2179${num}_1.fastq -2 SRR2179${num}_2.fastq -S SRR2179${num}.sam
 done
 
-for three in 952,961
-do
-hisat2 -p 20 --dta-cufflinks -x /data14/huangshihui/v2_annotation/index/v2 -U SRR2179${three}.fastq -S SRR2179${three}.sam
-done
+hisat2 -p 20 --dta-cufflinks -x /data14/huangshihui/v2_annotation/index/v2 -U SRR2179952.fastq -S SRR2179952.sam
+
+hisat2 -p 20 --dta-cufflinks -x /data14/huangshihui/v2_annotation/index/v2 -U SRR2179961.fastq -S SRR2179961.sam
 
 for four in {68..73}
 do
-hisat2 -p 20 --dta-cufflinks -x /data14/huangshihui/v2_annotation/index/v2 -1 SRR40691${four}_1.sra -2 SRR40691${four}_2.sra -S SRR40691${four}.sam
+hisat2 -p 20 --dta-cufflinks -x /data14/huangshihui/v2_annotation/index/v2 -1 SRR40691${four}_1.fastq -2 SRR40691${four}_2.fastq -S SRR40691${four}.sam
 done
 
 hisat2 -p 20 --dta-cufflinks -x /data14/huangshihui/v2_annotation/index/v2 -1 /data1/shijunpeng/data/LongMi4/20180709/LM-leaf_L2_A011.R1.clean.fastq.gz -2 /data1/shijunpeng/data/LongMi4/20180709/LM-leaf_L2_A011.R2.clean.fastq.gz -S zhangleaf.hisat2.sam
