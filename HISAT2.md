@@ -47,7 +47,8 @@ samtools sort -@ 20 -o file.bam file.sam
 ## StringTie转录本组装
 stringtie.sh
 ## Cufflinks转录本组装
-
+run_cufflink.sh
+> /home/wangzhiheng/huangshihui/software/cufflinks-2.2.1.Linux_x86_64/cufflinks -p 12 -b /data14/huangshihui/v2_annotation/longmi_v2.fa -o ./cufflink_all/ zhangleaf.bam
 # 3.TACO合并排序转录本
 ## TACO的下载及安装
 [TACO官方主页](http://tacorna.github.io/)  
