@@ -19,8 +19,9 @@
 ## 统计每个gff的注释信息
 *去TE区前后cufflink.gff中gene的数量*
 ![图片](https://user-images.githubusercontent.com/76728625/133565255-490bb843-846c-4cf0-8cd6-ef4d728ec714.png)
-  cat transdecoder.stringtie.gene_intersect-v.bed | wc -l
-  awk '$3==gene{print}' transdecoder.stringtie.gff3 | wc -l
+    cat transdecoder.stringtie.gene_intersect-v.bed | wc -l
+    awk '$3==gene{print}' transdecoder.stringtie.gff3 | wc -l
+*去TE区前后stringtie.gff中gene的数量*
 ![图片](https://user-images.githubusercontent.com/76728625/133566007-1aa936fc-79b5-4b11-baea-97a8cc4dfb8d.png)
 
 
