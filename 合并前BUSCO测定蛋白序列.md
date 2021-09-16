@@ -14,13 +14,15 @@
 ### 1.5 计算BUSCO值
   busco -m geno -i cufflink_out.fa -l /data2/wangzhiheng/BUSCO/embryophyta_odb10/ -c 40 -o v2_cufflink_emb --offline
 
-## RESULTS
+### 1.6RESULTS
 ![图片](https://user-images.githubusercontent.com/76728625/133548738-2c02b7a6-5f78-46e5-aa16-e42efe956f30.png)
 ![图片](https://user-images.githubusercontent.com/76728625/133548748-f58a3585-19c6-4107-ac2d-257ec052c261.png)
 
-## 统计每个gff的注释信息
+## 2.统计每个gff的注释信息
 *去TE区前后cufflink.gff中gene的数量*
 ![图片](https://user-images.githubusercontent.com/76728625/133565255-490bb843-846c-4cf0-8cd6-ef4d728ec714.png)
+![图片](https://user-images.githubusercontent.com/76728625/133568201-95f74d72-d397-4a78-b7d6-b066070dfb5d.png)
+
   cat transdecoder.stringtie.gene_intersect-v.bed | wc -l
   
   awk '$3==gene{print}' transdecoder.stringtie.gff3 | wc -l
