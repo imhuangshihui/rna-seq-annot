@@ -29,6 +29,7 @@
   
 *去TE区前后stringtie.gff中gene的数量*
 ![图片](https://user-images.githubusercontent.com/76728625/133566007-1aa936fc-79b5-4b11-baea-97a8cc4dfb8d.png)
+![图片](https://user-images.githubusercontent.com/76728625/133568740-caabd5cf-76b0-4e0f-99f4-bfd5d85af36c.png)
 
 
 ## Ref.
