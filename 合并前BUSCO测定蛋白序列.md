@@ -1,4 +1,6 @@
-# 目的：用cufflink/stringtie+transdecoder跑出来的gff文件：1.gene区域的蛋白序列BUSCO值如何；2.统计注释信息，如基因的数量,mRNA,CDS,exon等等
+# 目的：用cufflink/stringtie+transdecoder跑出来的gff文件：
+# 1.gene区域的蛋白序列BUSCO值如何；
+# 2.统计注释信息，如基因的数量,mRNA,CDS,exon等等
 ## 1.测试gff文件中的蛋白序列BUSCO值
 ### 1.1 提取gene的区域并打印成bed格式(这一步很慢，建议后台脚本)
   cat transdecoder.cufflink.gff3 | awk '$3=="gene"{print $1,$4,$5,$3}'| tr ' ' '\t' > transdecoder.cufflink.gene.bed
