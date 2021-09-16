@@ -33,9 +33,9 @@
 
 
 ## Ref.
-[师兄跑的脚本路径](/data14/wangzhiheng/final_v2/exonerate/remove_TEs)
+[师兄跑的脚本路径]/data14/wangzhiheng/final_v2/exonerate/remove_TEs
 
-[BUSCO结果路径](/data14/huangshihui/v2_annotation/transdecoder_results_for_stringtie/v2_stringtie_emb)
+[BUSCO结果路径]/data14/huangshihui/v2_annotation/transdecoder_results_for_stringtie/v2_stringtie_emb
 
 [最全Bedtools使用说明--只看本文就够了](https://www.jianshu.com/p/f8bbd51b5199)
 
