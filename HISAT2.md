@@ -1,4 +1,5 @@
 _突然想起是否需要用masked之后的基因组：/data14/wangzhiheng/final_v2/EDTA
+
 RNA-seq数据：/data4/Longmi4_rna_seq_
 # 1.对RNA-seq数据做质控
 ~~
