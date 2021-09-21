@@ -39,3 +39,4 @@
 
 [最全Bedtools使用说明--只看本文就够了](https://www.jianshu.com/p/f8bbd51b5199)
 
+## update:做错了，应该先用gff2cds转换成cds序列，去TE后再跑BUSCO
