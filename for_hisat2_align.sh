@@ -111,8 +111,3 @@ samtools sort -@ 20 -o zhangstem.hisat2.bam zhangstem.hisat2.sam
 
 
 
-
-
-
-
-
